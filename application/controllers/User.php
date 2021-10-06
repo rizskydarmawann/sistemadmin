@@ -19,23 +19,7 @@ class User extends CI_Controller {
 
     public function index()
     {
-        // $dt = new DateTime();
-        // echo $dt->format('Y-m-d\TH:i:s.').substr($dt->format('u'),0,3).'Z';
-
-        $secret = 'vOnBA6sAyvpt4TOt';
-        $payload = 'path=/v1.0/wsad/ADSearchUser&verb=POST&token=Bearer p8WFSdYyvpOANN49BMhY2GTeOv6n×tamp=2021-08-04T12:16:12.000Z&body={"userLogin":"00013238"}';
-        $signPayload = hash_hmac('sha256',$payload,$secret,true);
-			$base64sign = base64_encode($signPayload);
-			echo $base64sign;
-
-
-
-            $secret = 'vOnBA6sAyvpt4TOt';
-        $payload = 'path=/v1.0/wsad/ADSearchUser&verb=POST&token=Bearer p8WFSdYyvpOANN49BMhY2GTeOv6n&timestamp=2021-08-04T12:16:12.000Z&body={"userLogin":"00013238"}';
-        $signPayload = hash_hmac('sha256',$payload,$secret,true);
-			$base64sign = base64_encode($signPayload);
-			echo $base64sign;
-            // echo mb_internal_encoding();
+       
 
         
 
